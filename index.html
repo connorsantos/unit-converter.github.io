@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Converter</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="description" content="Use this for convenient conversions">
+  	<meta name="keywords" content="Connor, Santos, Connor Santos, converter, Unit, Length, Time, Temperature ">
+  	<meta name="author" content="Connor Santos">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/converter.css" type="text/css">
+
+  </head>
+  <body>
+    <div class="container length bg-success mt-5 card pt-2">
+      <h1 class="text-center ">Length</h1>
+      <form>
+        <div class="row">
+          <div class="col-sm-6 card bg-info bgunits text-white pt-2 pb-4">
+
+            <div class="card-header bg-secondary text-center mb-3">BG Units</div>
+
+            <div class="row">
+
+              <div class="col-sm-6 mt-2">
+                  <h6>Inches:</h6>
+                  <input id="inchInput" type="number" class="form-control" placeholder="Inches">
+              </div>
+
+              <div class="col-sm-6 mt-2">
+                  <h6>Feet:</h6>
+                  <input id="feetInput" type="number" class="form-control" placeholder="Feet">
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 mt-2">
+                  <h6>Yards:</h6>
+                  <input id="yardInput" type="number" class="form-control" placeholder="Yards">
+              </div>
+
+                <div class="col-sm-6 mt-2">
+                  <h6>Miles:</h6>
+                  <input id="milesInput" type="number" class="form-control" placeholder="Miles">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-sm-6 siunits card bg-info text-white pt-2 pb-4">
+          <div class="card-header bg-secondary text-center mb-3">SI Units</div>
+          <div class="row">
+
+            <div class="col-sm-6 mt-2">
+              <h6>Milimeters:</h6>
+              <input id="miliInput" type="number" class="form-control" placeholder="Milimeters">
+            </div>
+
+
+            <div class="col-sm-6 mt-2">
+              <h6>Centimeters:</h6>
+              <input id="centmInput" type="number" class="form-control" placeholder="Centimeters">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 mt-2">
+              <h6>Meters:</h6>
+              <input id="meterInput" type="number" class="form-control" placeholder="Meters">
+            </div>
+
+            <div class="col-sm-6 mt-2">
+              <h6>Kilometers:</h6>
+              <input id="kilomInput" type="number" class="form-control" placeholder="Kilometers">
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container time card bg-success mt-5 pt-2">
+      <h1 class="text-center">Time</h1>
+      <form>
+        <div class="row ">
+
+          <div class="col-sm-4 bg-info text-white">
+            <div class="pb-4 pt-3">
+
+              <div class="col mt-2">
+                <h6>Microseconds:</h6>
+                <input id="microsInput" type="number" class="form-control" placeholder="Microseconds">
+              </div>
+
+
+              <div class="col mt-2">
+                <h6>Seconds:</h6>
+                <input id="secInput" type="number" class="form-control" placeholder="Seconds">
+              </div>
+
+
+              <div class="col mt-2">
+                <h6>Minutes:</h6>
+                <input id="minInput" type="number" class="form-control" placeholder="Minutes">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-sm-4 bg-info text-white">
+            <div class="pb-4 pt-3">
+
+              <div class="col mt-2">
+                <h6>Hours:</h6>
+                <input id="hourInput" type="number" class="form-control" placeholder="Hours">
+              </div>
+
+              <div class="col mt-2">
+                <h6>Days:</h6>
+                <input id="dayInput" type="number" class="form-control" placeholder="Days">
+              </div>
+
+              <div class="col mt-2">
+                <h6>Weeks:</h6>
+                <input id="weekInput" type="number" class="form-control" placeholder="Weeks">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-sm-4 bg-info text-white">
+
+            <div class="pb-4 pt-3">
+              <div class="col mt-2">
+                <h6>Months:</h6>
+                <input id="montInput" type="number" class="form-control" placeholder="Months">
+              </div>
+
+              <div class="col mt-2">
+                <h6>Years:</h6>
+                <input id="yearInput" type="number" class="form-control" placeholder="Years">
+              </div>
+
+              <div class="col mt-2">
+                <h6>Decades:</h6>
+                <input id="decaInput" type="number" class="form-control" placeholder="Decades">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container temperature bg-success card mt-5 pt-2">
+      <h1 class="text-center">Temperature</h1>
+      <form>
+        <div class="row bg-info text-white">
+          <div class="col-sm-4 pb-4 pt-3">
+
+            <div class="col">
+              <h6>Celcius:</h6>
+              <input id="celInput" type="number" class="form-control" placeholder="Celcius">
+            </div>
+          </div>
+
+          <div class="col-sm-4 pb-4 pt-3">
+            <div class="col">
+              <h6>Farenheit:</h6>
+              <input id="farInput" type="number" class="form-control" placeholder="Farenheit">
+            </div>
+          </div>
+
+          <div class="col-sm-4 pb-4 pt-3">
+            <div class="col">
+              <h6>Kelvin:</h6>
+              <input id="kelInput" type="number" class="form-control" placeholder="Kelvin">
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container volume">
+        <h1>Volume</h1>
+        <form>
+          <div class="row">
+
+            <div class="col">
+              <input id="kelInput" type="number" class="form-control" placeholder="Kelvin">
+            </div>
+
+            <div class="col">
+              <input id="kelInput" type="number" class="form-control" placeholder="Kelvin">
+            </div>
+
+            <div class="col">
+              <input id="kelInput" type="number" class="form-control" placeholder="Kelvin">
+            </div>
+
+            <div class="col">
+              <input id="kelInput" type="number" class="form-control" placeholder="Kelvin">
+            </div>
+
+            <div class="col">
+              <input id="kelInput" type="number" class="form-control" placeholder="Kelvin">
+            </div>
+
+            <div class="col">
+              <input id="kelInput" type="number" class="form-control" placeholder="Kelvin">
+            </div>
+
+            <div class="col">
+              <input id="kelInput" type="number" class="form-control" placeholder="Kelvin">
+            </div>
+
+            <div class="col">
+              <input id="kelInput" type="number" class="form-control" placeholder="Kelvin">
+            </div>
+
+
+          </div>
+        </form>
+    </div>
+
+
+    <script src="../javascript/conv.js"></script>
+  </body>
+</html>
