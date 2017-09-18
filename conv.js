@@ -252,7 +252,7 @@ document.getElementById('usgalInput').addEventListener('input', function(e){
   let gal = e.target.value;
   qt.value = gal/.25;
   pt.value = gal/.125;
-  cup.value = gal/0.0634013;
+  cup.value = gal/0.01875;
   oz.value = gal/0.0078125;
   tbl.value = gal/0.00390625;
   tea.value = gal/0.00130208;
