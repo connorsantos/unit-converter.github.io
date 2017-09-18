@@ -234,3 +234,196 @@ document.getElementById('kelInput').addEventListener('input', function(e){
   far.value = 9/5 * (kel - 273.15) + 32;
   cel.value = kel-273.15;
 })
+
+var gal = document.querySelector('#usgalInput');
+var qt = document.querySelector('#usqrtInput');
+var pt = document.querySelector('#uspInput');
+var cup = document.querySelector('#uscupInput');
+var oz = document.querySelector('#usoInput');
+var tbl = document.querySelector('#ustblInput');
+var tea = document.querySelector('#teaInput');
+var cf = document.querySelector('#cfInput');
+var ci = document.querySelector('#ciInput');
+var cume = document.querySelector('#cmInput');
+var lit = document.querySelector('#litInput');
+var mm = document.querySelector('#mmlInput');
+
+document.getElementById('usgalInput').addEventListener('input', function(e){
+  let gal = e.target.value;
+  qt.value = gal/.25;
+  pt.value = gal/.125;
+  cup.value = gal/0.0634013;
+  oz.value = gal/0.0078125;
+  tbl.value = gal/0.00390625;
+  tea.value = gal/0.00130208;
+  cf.value = gal/7.48052;
+  ci.value = gal/0.004329;
+  cume.value = gal/264.172;
+  lit.value = gal/0.264172;
+  mm.value = gal/0.000264172;
+})
+
+document.getElementById('usqrtInput').addEventListener('input', function(e){
+  let qt = e.target.value;
+  gal.value = qt/4;
+  pt.value = qt/0.5;
+  cup.value = qt/0.25;
+  oz.value = qt/0.03125;
+  tbl.value = qt/0.015625;
+  tea.value = qt/0.00520833;
+  cf.value = qt/29.9221;
+  ci.value = qt/0.017316;
+  cume.value = qt/1056.69;
+  lit.value = qt/1.05669;
+  mm.value = qt/0.00105669;
+})
+
+document.getElementById('uspInput').addEventListener('input', function(e){
+  let pt = e.target.value;
+  gal.value = pt/8;
+  qt.value = pt/2;
+  cup.value = pt/0.5;
+  oz.value = pt/0.0625;
+  tbl.value = pt/0.03125;
+  tea.value = pt/0.0104167;
+  cf.value = pt/29.9221;
+  ci.value = pt/0.017316;
+  cume.value = pt/1056.69;
+  lit.value = pt/1.05669;
+  mm.value = pt/0.00105669;
+})
+
+document.getElementById('uscupInput').addEventListener('input', function(e){
+  let cup = e.target.value;
+  gal.value = cup/16;
+  qt.value = cup/4;
+  pt.value = cup/2;
+  oz.value = cup/0.125;
+  tbl.value = cup/0.0625;
+  tea.value = cup/0.0208333;
+  cf.value = cup/119.688;
+  ci.value = cup/0.0692641;
+  cume.value = cup/4226.75;
+  lit.value = cup/4.22675;
+  mm.value = cup/0.00422675;
+})
+
+document.getElementById('usoInput').addEventListener('input', function(e){
+  let oz = e.target.value;
+  gal.value = oz/128;
+  qt.value = oz/32;
+  pt.value = oz/16;
+  cup.value = oz/8;
+  tbl.value = oz/0.5;
+  tea.value = oz/0.166667;
+  cf.value = oz/957.506;
+  ci.value = oz/0.554113;
+  cume.value = oz/33814;
+  lit.value = oz/33.814;
+  mm.value = oz/0.033814;
+})
+
+document.getElementById('ustblInput').addEventListener('input', function(e){
+  let tbl = e.target.value;
+  gal.value = tbl/256;
+  qt.value = tbl/64;
+  pt.value = tbl/32;
+  cup.value = tbl/16;
+  oz.value = tbl/2;
+  tea.value = tbl/0.333333;
+  cf.value = tbl/1915.01;
+  ci.value = tbl/1.10823;
+  cume.value = tbl/67628;
+  lit.value = tbl/67.628;
+  mm.value = tbl/0.067628;
+})
+
+document.getElementById('teaInput').addEventListener('input', function(e){
+  let tea = e.target.value;
+  gal.value = tea/768;
+  qt.value = tea/192;
+  pt.value = tea/96;
+  cup.value = tea/48;
+  oz.value = tea/6;
+  tbl.value = tea/3;
+  cf.value = tea/5745.04;
+  ci.value = tea/3.32468;
+  cume.value = tea/202884;
+  lit.value = tea/202.884;
+  mm.value = tea/0.202884;
+})
+
+document.getElementById('cfInput').addEventListener('input', function(e){
+  let cf = e.target.value;
+  gal.value = cf/0.133681;
+  qt.value = cf/0.0334201;
+  pt.value = cf/0.0167101;
+  cup.value = cf/0.00835503;
+  oz.value = cf/0.00104438;
+  tbl.value = cf/0.00052219;
+  tea.value = cf/0.000174063;
+  ci.value = cf/0.000578704;
+  cume.value = cf/35.3147;
+  lit.value = cf/0.0353147;
+  mm.value = cf/3.53147e-5;
+})
+
+document.getElementById('ciInput').addEventListener('input', function(e){
+  let ci = e.target.value;
+  gal.value = ci/231;
+  qt.value = ci/57.75;
+  pt.value = ci/28.875;
+  cup.value = ci/14.4375;
+  oz.value = ci/1.80469;
+  tbl.value = ci/0.902344;
+  tea.value = ci/0.300781;
+  cf.value = ci/1728;
+  cume.value = ci/61023.7;
+  lit.value = ci/61.0237;
+  mm.value = ci/0.0610237;
+})
+
+document.getElementById('cmInput').addEventListener('input', function(e){
+  let cm = e.target.value;
+  gal.value = cm/0.00378541;
+  qt.value = cm/0.000946353
+  pt.value = cm/0.000473176;
+  cup.value = cm/0.000236588 ;
+  oz.value = cm/2.95735e-5;
+  tbl.value = cm/1.47868e-5;
+  tea.value = cm/4.92892e-6;
+  cf.value = cm/0.0283168;
+  ci.value = cm/1.63871e-5;
+  lit.value = cm/0.001;
+  mm.value = cm/1e-6;
+})
+
+document.getElementById('litInput').addEventListener('input', function(e){
+  let lit = e.target.value;
+  gal.value = lit/3.78541;
+  qt.value = lit/0.946353;
+  pt.value = lit/0.473176;
+  cup.value = lit/0.236588;
+  oz.value = lit/0.0295735;
+  tbl.value = lit/0.0147868;
+  tea.value = lit/0.00492892;
+  cf.value = lit/28.3168;
+  ci.value = lit/0.0163871;
+  cume.value = lit/1000;
+  mm.value = lit/0.001;
+})
+
+document.getElementById('mmlInput').addEventListener('input', function(e){
+  let ml = e.target.value;
+  gal.value = ml/3785.41;
+  qt.value = ml/946.353;
+  pt.value = ml/473.176;
+  cup.value = ml/236.588;
+  oz.value = ml/29.5735;
+  tbl.value = ml/14.7868;
+  tea.value = ml/4.92892;
+  cf.value = ml/28316.8;
+  ci.value = ml/16.3871;
+  cume.value = ml/1000000;
+  lit.value = ml/1000;
+})
